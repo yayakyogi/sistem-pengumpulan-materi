@@ -1,0 +1,291 @@
+@font-face{
+    font-family: roboto;
+    src: url('fontawesome-free/Roboto/Roboto-Regular.ttf');
+}
+body{
+    margin: 0;
+    padding: 0;
+    background-color: #e7e7e7;
+}
+.wrapper{
+    margin: 60px auto;
+    width: 700px;
+    padding-top: 15px;
+    font-family: 'roboto';
+}
+h3{
+    text-align: center;
+}
+
+label{
+    color: black;
+    text-transform: uppercase;
+    font-size: 9pt;
+    font-weight: 700;
+    letter-spacing: 1px;
+}
+.judul-form{
+    margin-bottom: 15px;
+}
+.border-form{
+    border-top: 3px solid #9fcdff;
+}
+.footer{
+    margin: 25px 0;
+    font-size: 10pt;
+    color: rgb(167, 164, 164);
+}
+#form-upload{
+    display: none;
+}
+/* navbar */
+.brand{
+    padding: 5px 0;
+    color: white;
+    font-size: 13pt;
+    font-weight: bold;
+}
+.brand:hover{
+    color: #ccd6df;
+    text-decoration: none;
+}
+/* Tabel */
+.tabel{
+    font-size: 11pt;
+    justify-content: center;
+}
+.card{
+    border-top: 5px solid #6cadf7;
+    box-shadow: 1px 2px 4px rgba(0,0,0,0.4);
+}
+.role{
+    font-weight: bold;
+    border: 1px dashed gray;
+    border-radius: 5px;
+    font-size: 10pt;
+    padding: 2px 10px;
+    display: inline-block;
+}
+.mapel{
+    position: absolute;
+    top: 10px;
+    right: 25px;
+    font-size: 10pt;
+}
+.level{
+    position: absolute;
+    top: 12px;
+    right: 25px;
+    font-size: 12pt;
+}
+.sup{
+    font-weight: normal;
+    font-size: 8pt;
+    margin-top: 6px;
+    border: 1px dashed gray;
+    display: inline-block;
+    padding: 0px 10px;
+    border-radius: 5px;
+}
+.title-tugas{
+    font-size: 9pt;
+    padding: 5px 10px;
+    border-radius: 5px;
+    display: inline-block;
+    font-weight: bold;
+}
+/* Siswa/tugas */
+.name{
+    font-size: 10pt;
+    margin-bottom: 5px;
+}
+@media screen and (max-width:600px){
+    .tabel{
+        font-size: 9pt;
+        width: fit-content;
+    }
+    .kelas{
+        display: none;
+    }
+    .aksi{
+        text-align: left;
+    }
+    .gambar{
+        display: none;
+    }
+    .wrapper{
+        width: 400px;
+    }
+    .brand{
+        font-size: 12pt;
+    }
+    .card{
+        border-top: 3px solid #6cadf7;;
+    }
+    .footer{
+        margin-top: 10px;
+    }
+    .role{
+        font-size: 8pt;
+    }
+}
+
+/* Navbar #84baf7; */
+.nav{
+    background-color:#6cadf7;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    box-shadow: 1px 2px 8px rgba(0, 0, 0, 0.7);
+    z-index: 1;
+}
+.title{
+    display: block;
+    float: left;
+    line-height: 50px;
+    font-size: 15pt;
+    font-weight: 600;
+    color: white;
+    margin-left: -20px;
+}
+.logout{
+    font-size: 10pt;
+    position: absolute;
+    right: 70px;
+    top: 12px;
+    color: white;
+    display: block;
+    padding: 3px 10px;
+    border-radius: 5px;
+    border: 1px solid whitesmoke;
+}
+.logout:hover{
+    text-decoration: none;
+    color: gray;
+    background-color: white;
+}
+.menu{
+    display: block;
+    float: right;
+    font-size: 11pt;
+}
+.wrap{
+    width: 90%;
+    margin: 0 auto;
+}
+.copyright{
+    position: absolute;
+    right: 150px;
+    top: 15px;
+    font-size: 10pt;
+    color: white;
+}
+@media screen and (max-width:600px){
+    .menu{
+        width: 100%;
+        text-align:center;
+        display: block;
+    }
+    .menu ul li{
+        display: block;
+        text-align: center;
+    }
+    .title{
+        font-size: 14pt;
+        margin-left: 10px;
+    }
+    .logout{
+        right: 20px;
+    }
+    .copyright{
+        display: none;
+    }
+    .content-admin{
+        margin-top: 15px;
+    }
+}
+.container{
+    margin-top: 70px;
+}
+.container-fluid{
+    margin-top: 70px;
+}
+.kembali{
+    color: gray;
+    font-size: 10pt;
+}
+.kembali:hover{
+    color: rgb(114, 114, 253);
+}
+.confirm-delete{
+    padding: 5px 20px;
+    width: 30%;
+    background-color: #dc3545;
+    border: 1px solid #dc3545;
+    border-radius: 5px;
+    position: relative;
+    display: block;
+}
+.confirm-tambah{
+    padding: 5px 20px;
+    width: 30%;
+    background-color: #28a745;
+    border: 1px solid #28a745;
+    border-radius: 5px;
+    position: relative;
+    display: block;
+}
+.confirm-sukses{
+    padding: 5px 20px;
+    width: 100%;
+    background-color: #28a745;
+    border: 2px dashed #28a745;
+    border-radius: 5px;
+    position: relative;
+    display: block;
+}
+@media screen and (max-width:960px){
+    .confirm-delete{
+        width: 100%;
+    }
+    .confirm-tambah{
+        width: 100%;
+    }
+}
+.pesan{
+    display: inline;
+    margin-left:15px;
+    color: gray;
+}
+#close{
+    position: absolute;
+    left: 0;
+    top: 0;
+    font-size: 21pt;
+    border: none;
+    display: inline-block;
+    background-color: transparent;
+    color: gray;
+}
+#close-sukses{
+    position: absolute;
+    left: 0;
+    top: 0;
+    font-size: 15pt;
+}
+#close:hover{
+    color: rgb(83, 83, 83);
+}
+.icon{
+    width:15px;
+    height:15px;
+    margin-top:-2px;
+}
+.icon-index{
+    width: 60px;
+    height: 60px;
+    position: absolute;
+    top: 10px;
+    right: 20px;
+}
